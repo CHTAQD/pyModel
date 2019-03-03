@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{err}}</title>
+</head>
+<body>
+{%if err :%}
+    <h1 style="color:red">{{err}}</h1>
+{%endif  %}
+    <form action="/logins" method="post">
+        <input name="username"value="{{username}}">
+        <input type="password" name="password" >
+        <button type="submit">登录</button>
+    </form>
+</body>
+</html>
